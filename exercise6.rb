@@ -12,25 +12,22 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 def list(glist)
-  puts ""
   glist.each do |item| 
     puts "* #{item}"
-
   end
-  puts ""
 end
 
-puts "\nGrocery list:"
+puts "\nGrocery list:\n\n"
 
 list(grocery_list)
 
-puts "Add rice to Grocery list:"
+puts "\nAdd rice to Grocery list:\n\n"
 
 grocery_list << "rice"
 
 list(grocery_list)
 
-puts "Total number of items in the list:\n\n"
+puts "\nTotal number of items in the list:\n\n"
 
 puts grocery_list.length.to_s + " items.\n\n"
 
@@ -46,11 +43,11 @@ puts "Display second item in the list:\n\n"
 
 puts grocery_list[1].capitalize
 
-puts "\nList grocery_list in arphabetical order:"
+puts "\nList grocery_list in arphabetical order:\n\n"
 
 list grocery_list.sort
 
-puts "Remove salmon from the list and relist:"
+puts "\nRemove salmon from the list and relist:\n\n"
 
 grocery_list.delete("salmon")
 list grocery_list.sort
