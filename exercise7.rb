@@ -8,10 +8,17 @@ def display_cohort(display)
   display.each do | k,v |
     puts "#{k}: #{v} students"
   end
+  puts ""
 end
+
+#display cohorts key and value
+puts "Display the cohorts' name and the amount\n\n"
 
 display_cohort(students) 
 
-students = {:cohort4 => 43}
+#add cohort 4
+students[:cohort4] = 43 
+
+puts "Add cohort4 to hash\n\n"
 
 display_cohort(students)
