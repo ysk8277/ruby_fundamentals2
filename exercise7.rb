@@ -29,10 +29,24 @@ puts students.keys
 #expand each cohort value by 5%
 puts "\nIncrease each cohort number by 5% and display the new results:\n\n"
 
-students.each do |k,v| students[k]=(v*1.05).round
+students.each do |k,v| 
+  students[k]=(v*1.05).round
 end
 
 display_cohort(students)
 
+#delete second cohort and redisplay
 puts "\nDelete second cohort:\n\n"
+students.delete(:cohort2)
+display_cohort(students)
 
+#bonus: caculate total students in the cohorts using each.
+puts "\nTotal students in the cohorts:\n\n"
+
+total = 0
+
+students.each do |k,v|
+  total += v
+end
+
+puts "#{total}"
