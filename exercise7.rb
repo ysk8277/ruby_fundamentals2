@@ -12,13 +12,20 @@ def display_cohort(display)
 end
 
 #display cohorts key and value
-puts "Display the cohorts' name and the amount\n\n"
+puts "\nDisplay the cohorts' name and the amount:\n\n"
 
 display_cohort(students) 
 
 #add cohort 4
 students[:cohort4] = 43 
 
-puts "Add cohort4 to hash\n\n"
+puts "Add cohort4 to hash:\n\n"
 
 display_cohort(students)
+
+#output cohort name with keys
+puts "Cohort names:\n\n"
+puts students.keys
+
+#expand each cohort value by 5%
+puts "\nIncrease each cohort number by 5% and display the new results:\n\n"

@@ -20,7 +20,7 @@ def list(glist)
   puts ""
 end
 
-puts "Grocery list:"
+puts "\nGrocery list:"
 
 list(grocery_list)
 
@@ -45,9 +45,8 @@ end
 puts "Display second item in the list:\n\n"
 
 puts grocery_list[1].capitalize
-puts ""
 
-puts "List grocery_list in arphabetical order:"
+puts "\nList grocery_list in arphabetical order:"
 
 list grocery_list.sort
 
